@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: rgb(211, 211, 211);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cabecalho .logo {
+    width: 250px;
+    margin: 20px;
+}
+
+.cabecalho ul {
+    display: flex;
+    gap: 70px;
+
+    list-style: none;
+    
+    opacity: 0.6;
+}
+
+.principal .principal-imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.principal-imagem-elemento {
+	display: block;
+	height: 50px;
+	line-height: 24px;
+	margin: 0;
+	padding: 82px 75px 0;
+	position: absolute;
+	right: 130px;
+	top: 437px;
+	z-index: 90;
+}
+
+.principal-imagem-elemento img {
+    width: 200px;
+}
+
+.principal-sessao-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.principal-sessao-2-texto {
+    margin-left: 60px;
+}
+
+.principal-sessao-2 h3 {
+    margin-top: 30px;
+    opacity: 0.6;
+}
+
+.principal-sessao-2 h2 {
+    margin-top: 10px;
+    color: #cb3362;
+    font-weight: bold;
+}
+
+.principal-sessao-2 p {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    opacity: 0.7;
+}
+
+.principal-sessao-2 img {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 38%;
+    border-radius: 10px;
+}
+
+.principal-sessao-3 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 20px;
+
+    background: #c8c10d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.principal-sessao-3 i {
+    margin-top: 24px;
+    margin-bottom: 10px;    
+
+    font-size: 50px;
+    color: #fff;
+}
+
+.principal-sessao-3 a {
+    margin-left: 20px;
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.rodape {
+    padding: 5%;
+
+    text-align: center;
+    background: #cb3362;
+}
+
+.rodape .redes-sociais i {
+    margin-bottom: 20px;
+    width: 56px;
+
+    font-size: 34px;
+    color: #fff;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.7;
+}
