@@ -9,6 +9,7 @@
 body {
     width: 100%;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -19,19 +20,28 @@ ul {
     list-style: none;
 }
 
-.cabeçalho .s-1 {
+.inicio {
+    display: flex;
+    /* height: 100vh; */
+}
+
+.lateral {
     background-color: #fff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
 
     height: 100vh;
     width: 10vw;
 }
 
-.cabeçalho .s-1 i {
+.lateral img {
+    width: 130px;
+    margin: 30px 0 20vh 0;
+}
+
+.redes-sociais-1 i {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,63 +51,53 @@ ul {
     color: #463b63;
 }
 
-.cabeçalho {
+
+.sessao-1 {
     display: flex;
-    height: 15vh;
 
     background: #eac0e1;
-    color: #463b63;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
-.cabeçalho img {
-    width: 130px;
-    margin: 30px 0 20vh 0;
-}
-
-.cabeçalho ul {
+.nav ul {
     display: flex;
-    gap: 80px;
-    margin: 40px 0 0 200px;
+    gap: 50px;
+
+    margin: 80px 0 60px 0;
 
     text-transform: uppercase;
 }
 
-.principal-sessao-1 {
-    display: flex;
-
-    background: #eac0e1;
-    height: 100vh;
-}
-
-.principal-sessao-1 .text {
-    margin-left: 200px;
+.sessao-1 .text {
+    margin: 0 0 0 50px;
+    width: 65%;
 
     color: #463b63;
 }
 
-.principal-sessao-1 img {
-    width: 550px;
+.sessao-1 img {
+    width: 89%;
 }
 
-.principal-sessao-1 .text h1 {
+.sessao-1 .text h1 {
     font-family: 'Righteous', cursive;
     text-transform: uppercase;
     font-size: 60px;
 }
 
-.principal-sessao-1 .text h4 {  
+.sessao-1 .text h4 {
     font-family: 'Montserrat', sans-serif;
 
     margin-bottom: 15px;
 }
 
-.principal-sessao-1 .text p { 
+.sessao-1 .text span {
+    font-size: 70px;
+}
+
+.sessao-1 .text p {
     font-family: 'Montserrat', sans-serif;
 
-    width: 35%;
-    margin-bottom: 45px;
+    margin-bottom: 10%;
 }
 
 button {
@@ -109,11 +109,6 @@ button {
     font-size: 17px;
 
     padding: 10px;
-    /* margin-bottom: 30px; */
-}
-
-.principal-sessao-1 .text span {
-    font-size: 70px;
 }
 
 .line {
@@ -123,10 +118,6 @@ button {
 
     width: 338px;
     margin-bottom: 60px;
-}
-
-.principal-sessao-1 .text h2 {
-
 }
 
 .principal-sessao-3 {
@@ -146,6 +137,10 @@ button {
 
     font-size: 50px;
     color: #fff;
+}
+
+.principal-sessao-3 img {
+    width: 50px;
 }
 
 .principal-sessao-3 a {
