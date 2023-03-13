@@ -49,8 +49,14 @@ ul {
 
     font-size: 30px;
     color: #463b63;
+
+    transition: 100ms;
 }
 
+.redes-sociais-1 i:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+}
 
 .sessao-1 {
     display: flex;
@@ -65,6 +71,15 @@ ul {
     margin: 80px 0 60px 0;
 
     text-transform: uppercase;
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.nav ul li:hover {
+    font-weight: bold;
 }
 
 .sessao-1 .text {
@@ -109,6 +124,14 @@ button {
     font-size: 17px;
 
     padding: 10px;
+
+    transition: 100ms;
+    cursor: pointer;
+}
+
+button:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .line {
@@ -162,6 +185,13 @@ button {
 
     font-size: 34px;
     color: #fff;
+
+    transition: 100ms;
+}
+
+.redes-sociais-2 i:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .rodape p {
