@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './SecondaryButton.module.sass';
+import styles from '../sass/SecondaryButton.module.sass';
 
 export function SecondaryButton(props) {
     return (
@@ -9,8 +9,14 @@ export function SecondaryButton(props) {
             className={props.className}
             target={props.target}
         >
-            {props.text}
-            {props.icon}
+            <div className={styles.content}>
+                <span>
+                    {props.icon}
+                </span>
+                <span>
+                    {props.text}
+                </span>
+            </div>
         </a>
     )
 }

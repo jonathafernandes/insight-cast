@@ -1,10 +1,11 @@
 @use 'mixins'
+@use 'variables'
     
 * 
     @include mixins.reset
 
 body
     background-color: rgb(38 39 43 / var(--tw-bg-opacity))
-    color: #f3f3f3
+    color: variables.$text-color
     font-family: "Manrope", sans-serif
     --tw-bg-opacity: 1

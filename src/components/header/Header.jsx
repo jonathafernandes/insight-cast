@@ -1,5 +1,7 @@
 import logo from '/logo.svg';
-import styles from './Header.module.sass'
+import styles from '../sass/Header.module.sass';
+
+import { GithubLogo } from "@phosphor-icons/react";
 import { SecondaryButton } from '../secondary-button/SecondaryButton';
 
 export function Header() {
@@ -20,7 +22,10 @@ export function Header() {
             </nav>
             <SecondaryButton
                 text="Código fonte"
-                className={styles.headerButton}
+                className={styles.button}
+                href='https://github.com/jonathafernandes/insight-cast'
+                target='_blank'
+                icon={<GithubLogo size={22} weight="duotone" />}
             />
         </div>
     )
