@@ -1,3 +1,5 @@
+@use 'variables'
+
 @mixin reset
     margin: 0
     padding: 0
@@ -8,8 +10,11 @@
     
     a 
         text-decoration: none
-        color: #f3f3f3
+        color: variables.$text-color
         cursor: pointer
+
+    button
+        font-family: "Manrope", sans-serif
     
 @mixin flex-container
     display: flex
@@ -19,4 +24,8 @@
 @mixin primary-hover
     &:hover
         background: #3d3d3d
+
+@mixin secondary-hover
+    &:hover
+        background: variables.$primary-color
     
