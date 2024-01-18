@@ -1,0 +1,29 @@
+@use 'mixins'
+@use 'variables'
+    
+.content
+    section
+        @include mixins.flex-container
+        justify-content: space-around
+
+        .contentText
+            width: 50%
+            
+            span
+                color: variables.$primary-color
+                font-size: 0.87rem
+                font-weight: 700
+                text-transform: uppercase
+
+            h2
+                color: variables.$text-color
+                font-size: 3rem
+                font-weight: 700
+                margin: 0.5rem 0 1rem 0
+
+        .contentImages
+            @include mixins.flex-container
+            
+            img
+                width: 100%
+                max-width: 210px
