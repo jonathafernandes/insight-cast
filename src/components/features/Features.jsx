@@ -4,50 +4,49 @@ import feature1 from '../../assets/images/feature1.e0027e8f.jpg';
 import feature2 from '../../assets/images/feature2.7379c11f.jpg';
 import feature3 from '../../assets/images/feature3.552ca605.jpg';
 import feature4 from '../../assets/images/feature4.f680f503.jpg';
-import { Check } from '@phosphor-icons/react';
+import feature5 from '../../assets/images/feature5.e0027e8f.jpeg';
+import feature6 from '../../assets/images/feature6.e0027e8f.jpeg';
+
+import { ContentText } from './ContentText';
 
 export function Features() {
     return (
         <div className={styles.content}>
             <section className={styles.one}>
-                <div className={styles.contentText}>
-                    <span>Lorem ipsum dolor sit</span>
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum, praesentium consectetur voluptatem vitae natus consequuntur modi esse.</p>
-                    <ul>
-                        <li>
-                            <Check size={20} weight="bold" />
-                            <span>
-                                Lorem ipsum dolor sit amet consectetu
-                            </span>
-                        </li>
-                        <li>
-                            <Check size={20} weight="bold" />
-                            <span>
-                                Lorem ipsum dolor sit amet consectetu
-                            </span>
-                        </li>
-                        <li>
-                            <Check size={20} weight="bold" />
-                            <span>
-                                Lorem ipsum dolor sit amet consectetu
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+                <ContentText
+                    subtitle="Lorem ipsum dolor sit amet"
+                    title="We have some great features from the application"
+                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. "
+                    listItemOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    listItemTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    listItemThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                />
                 <div className={styles.contentImages}>
                     <div>
                         <img src={feature1} alt="" />
                         <img src={feature2} alt="" />
                     </div>
                     <div>
-                        <img className={styles.imgTwo} src={feature3} alt="" />
+                        <img className={styles.imgThree} src={feature3} alt="" />
                         <img src={feature4} alt="" />
                     </div>
                 </div>
             </section>
             <section className={styles.two}>
-
+                <ContentText
+                    subtitle="Lorem ipsum dolor sit amet"
+                    title="We have some great features from the application"
+                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. "
+                    listItemOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    listItemTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    listItemThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                />
+                <div className={styles.contentImages}>
+                    <div>
+                        <img src={feature5} alt="" />
+                        <img className={styles.imgSix} src={feature6} alt="" />
+                    </div>
+                </div>
             </section>
         </div>
     )
