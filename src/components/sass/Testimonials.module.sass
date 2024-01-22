@@ -1,0 +1,22 @@
+@use 'variables'
+@use 'mixins'
+
+.content
+    @include mixins.flex-container
+    flex-direction: column
+
+    span
+        color: variables.$primary-color
+        font-size: 0.87rem
+        font-weight: 700
+        text-transform: uppercase
+
+    h2
+        margin: 1rem 0 3rem 0
+
+        font-size: 3rem
+
+    .cards
+        @include mixins.flex-container
+        gap: 2rem
+        flex-wrap: wrap

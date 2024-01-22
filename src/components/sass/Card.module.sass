@@ -1,0 +1,20 @@
+@use 'variables'
+@use 'mixins'
+
+.card
+    background: variables.$bg-color
+    @include mixins.border-radius
+
+    padding: 1.5em
+    width: 300px
+
+
+    .perfil
+        margin-top: 1.7rem
+
+        p
+            font-weight: 700
+
+        span
+            text-transform: initial
+            color: variables.$secondary-text-color
