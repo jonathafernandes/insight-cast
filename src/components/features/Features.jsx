@@ -8,6 +8,7 @@ import feature5 from '../../assets/images/feature5.e0027e8f.jpeg';
 import feature6 from '../../assets/images/feature6.e0027e8f.jpeg';
 
 import { ContentText } from './ContentText';
+import { Line } from '../line/Line';
 
 export function Features() {
     return (
@@ -32,6 +33,7 @@ export function Features() {
                     </div>
                 </div>
             </section>
+            <Line />
             <section className={styles.two}>
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
