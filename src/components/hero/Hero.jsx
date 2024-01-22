@@ -7,7 +7,7 @@ export function Hero() {
     return (
         <div className={styles.content}>
             <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur</p>
-            <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit, suscipit, atque distinctio saepe eos.</h1>
+            <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
             <p className={styles.description}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit qui praesentium ut nulla! Corrupti dolorum ipsam culpa eos.
             </p>

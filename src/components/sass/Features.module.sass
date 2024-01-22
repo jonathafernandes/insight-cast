@@ -4,7 +4,8 @@
 .content
     section
         @include mixins.flex-container
-        justify-content: space-around
+        margin: 8rem 1rem 0 1rem
+        padding-bottom: 5rem
 
         .contentText
             width: 50%
@@ -21,9 +22,45 @@
                 font-weight: 700
                 margin: 0.5rem 0 1rem 0
 
+                width: 90%
+
+            p
+                color: variables.$secondory-text-color
+                line-height: 1.8rem
+
+                width: 90%
+
+            ul
+                margin-top: 2rem
+                line-height: 1.8rem
+
+                li
+                    margin-bottom: 0.5rem
+
+                    svg
+                        color: variables.$primary-color
+                        margin-right: 0.8rem
+                    
+                    span
+                        color: variables.$text-color
+                        text-transform: capitalize
+                        font-weight: 500
+
         .contentImages
             @include mixins.flex-container
+            gap: 2rem
+
+            div
+                @include mixins.flex-container
+                flex-direction: column
+                gap: 2rem
+                align-items: flex-start
+                justify-content: flex-start
             
-            img
-                width: 100%
-                max-width: 210px
+                img
+                    width: 100%
+                    max-width: 210px
+                    @include mixins.border-radius
+            
+            .imgTwo
+                margin-top: 7rem
