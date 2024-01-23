@@ -1,9 +1,9 @@
-import styles from '../sass/Card.module.sass';
+import styles from '../sass/TestimonialsCard.module.sass';
 import PropTypes from 'prop-types';
 
 import { Quotes } from '@phosphor-icons/react';
 
-export function Card(props) {
+export function TestimonialsCard(props) {
     return (
         <div className={styles.card}>
             <Quotes size={46} weight="fill" />
@@ -18,7 +18,7 @@ export function Card(props) {
     )
 }
 
-Card.propTypes = {
+TestimonialsCard.propTypes = {
     textContent: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired

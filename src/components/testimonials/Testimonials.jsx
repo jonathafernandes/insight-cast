@@ -1,6 +1,6 @@
 import styles from '../sass/Testimonials.module.sass';
 
-import { Card } from "./Card";
+import { TestimonialsCard } from './TestimonialsCard.jsx';
 
 export function Testimonials() {
     return (
@@ -8,17 +8,17 @@ export function Testimonials() {
             <span>Testimonials</span>
             <h2>People like you love</h2>
             <div className={styles.cards}>
-                <Card
+                <TestimonialsCard
                     textContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus."
                     name="Maria Silva"
                     role="Lorem ipsum"
                 />
-                <Card
+                <TestimonialsCard
                     textContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus."
                     name="João Silva"
                     role="Lorem ipsum"
                 /> 
-                <Card
+                <TestimonialsCard
                     textContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus."
                     name="José Silva"
                     role="Lorem ipsum"
