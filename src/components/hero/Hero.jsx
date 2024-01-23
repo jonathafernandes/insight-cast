@@ -1,4 +1,5 @@
 import styles from "../sass/Hero.module.sass";
+import stylesButton from '../sass/PrimaryButton.module.sass';
 import image from "../../assets/images/dashboard.c764a4bf.jpg";
 
 import { PrimaryButton } from "../primary-button/PrimaryButton";
@@ -13,11 +14,11 @@ export function Hero() {
             </p>
             <div className={styles.buttons}>
                 <PrimaryButton 
-                    className={styles.buttonOne}
+                    className={stylesButton.buttonOne}
                     text="Iniciar"
                 />
                 <PrimaryButton
-                    className={styles.buttonTwo}
+                    className={stylesButton.buttonTwo}
                     text="Demonstração ao vivo"
                 />
             </div>
