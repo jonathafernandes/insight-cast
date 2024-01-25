@@ -1,0 +1,15 @@
+@use 'variables'
+@use 'mixins'
+
+.content
+    text-align: center
+
+    span
+        color: variables.$primary-color
+        font-size: 0.87rem
+        font-weight: 700
+        text-transform: uppercase
+
+.cards
+    @include mixins.flex-container
+    gap: 2rem

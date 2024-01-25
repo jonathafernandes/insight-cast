@@ -3,12 +3,43 @@ import stylesButton from '../sass/PrimaryButton.module.sass';
 import PropTypes from 'prop-types';
 
 import { PrimaryButton } from '../primary-button/PrimaryButton';
+import { Check } from '@phosphor-icons/react';
 
-export function PricingCard({ plan, price }) {
+export function PricingCard({ plan, price, description}) {
     return (
         <div className={styles.card}>
-            <h3>{plan}</h3>
-            <p>{price}</p>
+            <h3 className={styles.plan}>{plan}</h3>
+            <span className={styles.price}>{price}</span>
+            <p className={styles.description}>{description}</p>
+            <ul>
+                <li>
+                    <Check size={20} weight="bold" />
+                    <span>
+                        Lorem ipsum dolor
+                    </span>
+                </li>
+                <li>
+                    <Check size={20} weight="bold" />
+                    <span>
+                        Lorem ipsum dolor
+                    </span>
+                </li>                <li>
+                    <Check size={20} weight="bold" />
+                    <span>
+                        Lorem ipsum dolor
+                    </span>
+                </li>                <li>
+                    <Check size={20} weight="bold" />
+                    <span>
+                        Lorem ipsum dolor
+                    </span>
+                </li>                <li>
+                    <Check size={20} weight="bold" />
+                    <span>
+                        Lorem ipsum dolor
+                    </span>
+                </li>
+            </ul>
             <PrimaryButton
                 className={stylesButton.buttonOne}
                 text='Get Started'
@@ -20,4 +51,5 @@ export function PricingCard({ plan, price }) {
 PricingCard.propTypes = {
     plan: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
 }
