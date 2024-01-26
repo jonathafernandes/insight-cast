@@ -2,14 +2,22 @@
 @use 'mixins'
 
 .content
+    margin-top: 8rem
+
     text-align: center
 
-    span
+    .subTitle
         color: variables.$primary-color
         font-size: 0.87rem
         font-weight: 700
         text-transform: uppercase
 
+    .title
+        font-size: 3rem
+
+    .description
+        color: variables.$secondary-text-color
+        line-height: 1.8rem
+
 .cards
     @include mixins.flex-container
-    gap: 2rem

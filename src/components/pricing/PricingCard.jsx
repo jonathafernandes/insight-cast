@@ -14,30 +14,31 @@ export function PricingCard({ plan, price, description}) {
             <ul>
                 <li>
                     <Check size={20} weight="bold" />
-                    <span>
+                    <p>
                         Lorem ipsum dolor
-                    </span>
+                    </p>
                 </li>
                 <li>
                     <Check size={20} weight="bold" />
-                    <span>
+                    <p>
                         Lorem ipsum dolor
-                    </span>
+                    </p>
+                </li>
+                <li>
+                    <Check size={20} weight="bold" />
+                    <p>
+                        Lorem ipsum dolor
+                    </p>
                 </li>                <li>
                     <Check size={20} weight="bold" />
-                    <span>
+                    <p>
                         Lorem ipsum dolor
-                    </span>
+                    </p>
                 </li>                <li>
                     <Check size={20} weight="bold" />
-                    <span>
+                    <p>
                         Lorem ipsum dolor
-                    </span>
-                </li>                <li>
-                    <Check size={20} weight="bold" />
-                    <span>
-                        Lorem ipsum dolor
-                    </span>
+                    </p>
                 </li>
             </ul>
             <PrimaryButton

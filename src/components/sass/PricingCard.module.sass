@@ -3,8 +3,10 @@
 
 .card
     background: variables.$bg-color
-    @include mixins.border-radius
 
+    @include mixins.border-radius
+    flex-wrap: wrap
+    margin: 2rem
     padding: 1rem
 
     .plan
@@ -22,5 +24,16 @@
         color: variables.$secondary-text-color
         font-size: 0.87rem
         line-height: 1.8rem
+        text-align: center
 
         margin: 1rem 0
+
+    ul
+        margin-bottom: 4rem
+        li
+            @include mixins.flex-container
+            gap: 0.8rem
+            margin-bottom: 0.5rem
+        
+        svg
+            color: variables.$primary-color
