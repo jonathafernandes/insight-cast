@@ -17,7 +17,7 @@ export function Features() {
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
                     title="We have some great features from the application"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. "
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. "
                     listItemOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                     listItemTwo="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                     listItemThree="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
