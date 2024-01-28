@@ -13,7 +13,7 @@ export function Testimonials() {
     }, []);
 
     return (
-        <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
+        <div id="testimonials" className={styles.content} data-aos="fade-up" data-aos-duration="3000">
             <span className={styles.subtitle}>Testimonials</span>
             <h2 className={styles.title}>People like you love</h2>
             <div className={styles.cards}>

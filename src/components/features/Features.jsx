@@ -21,7 +21,7 @@ export function Features() {
     }, []);
 
     return (
-        <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
+        <div id="features" className={styles.content} data-aos="fade-up" data-aos-duration="3000">
             <section className={styles.one}>
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"

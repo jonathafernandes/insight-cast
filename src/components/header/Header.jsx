@@ -13,6 +13,33 @@ export function Header() {
         AOS.init();
     }, []);
 
+    useEffect(() => {
+        const scrollLinks = document.querySelectorAll('.scroll-link');
+        
+        scrollLinks.forEach(scrollLink => {
+            scrollLink.addEventListener('click', smoothScroll);
+        });
+
+        return () => {
+            scrollLinks.forEach(scrollLink => {
+                scrollLink.removeEventListener('click', smoothScroll);
+            });
+        };
+    }, []);
+
+    const smoothScroll = (event) => {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <header>
             <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
@@ -22,11 +49,11 @@ export function Header() {
                 </div>
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Características</li>
-                        <li>Preços</li>
-                        <li>Opinião</li>
-                        <li>Perguntas frequentes</li>
+                        <li><a className="scroll-link" href="/">Home</a></li>
+                        <li><a className="scroll-link" href="#features">Características</a></li>
+                        <li><a className="scroll-link" href="#testimonials">Opinião</a></li>
+                        <li><a className="scroll-link" href="#pricing">Preços</a></li>
+                        <li><a className="scroll-link" href="#faq">Perguntas frequentes</a></li>
                     </ul>
                 </nav>
                 <SecondaryButton

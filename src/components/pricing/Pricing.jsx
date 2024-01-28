@@ -13,16 +13,11 @@ export function Pricing() {
     }, []);
 
     return (
-        <div className={styles.content}>
+        <div id="pricing" className={styles.content} data-aos="fade-up" data-aos-duration="3000">
             <span className={styles.subtitle}>Find your perfect fit</span>
             <h2 className={styles.title}>Choose your best plan</h2>
             <p className={styles.description}>Select the plan that suits your needs and benefit from our analytics tools.</p>
-            <div 
-                className={styles.cards} 
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="1000">
+            <div className={styles.cards}>
                 <PricingCard 
                     plan="Basic"
                     price="$29"
