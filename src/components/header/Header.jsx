@@ -1,13 +1,21 @@
-import logo from '/logo.svg';
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import styles from '../sass/Header.module.sass';
+import logo from '/logo.svg';
 
 import { GithubLogo } from "@phosphor-icons/react";
 import { SecondaryButton } from '../secondary-button/SecondaryButton';
 
 export function Header() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <header>
-            <div className={styles.content}>
+            <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
                 <div className={styles.logo}>
                     <img src={logo} alt="" />
                     <span>Insightcast</span>

@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import styles from "../sass/Hero.module.sass";
 import stylesButton from '../sass/PrimaryButton.module.sass';
 import image from "../../assets/images/dashboard.c764a4bf.jpg";
@@ -5,8 +9,12 @@ import image from "../../assets/images/dashboard.c764a4bf.jpg";
 import { PrimaryButton } from "../primary-button/PrimaryButton";
 
 export function Hero() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className={styles.content}>
+        <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
             <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur</p>
             <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
             <p className={styles.description}>

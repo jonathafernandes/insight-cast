@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import styles from '../sass/Features.module.sass';
 
 import feature1 from '../../assets/images/feature1.e0027e8f.jpg';
@@ -10,9 +14,14 @@ import feature6 from '../../assets/images/feature6.e0027e8f.jpeg';
 import { ContentText } from './ContentText';
 import { Line } from '../line/Line';
 
+
 export function Features() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className={styles.content}>
+        <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
             <section className={styles.one}>
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
