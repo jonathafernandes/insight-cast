@@ -3,8 +3,14 @@
 
 .content
     @include mixins.flex-container
-    margin: 2rem
     justify-content: space-around
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 1.3rem
+    z-index: 1000
+    backdrop-filter: blur(24px)
 
     .logo
         display: flex
