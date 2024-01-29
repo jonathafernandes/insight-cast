@@ -21,8 +21,14 @@ export function Features() {
     }, []);
 
     return (
-        <div id="features" className={styles.content} data-aos="fade-up" data-aos-duration="3000">
-            <section className={styles.one}>
+        <div id="features" className={styles.content}>
+            <section
+                className={styles.one}
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="500">
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
                     title="We have some great features from the application"
@@ -43,7 +49,13 @@ export function Features() {
                 </div>
             </section>
             <Line />
-            <section className={styles.two}>
+            <section
+                className={styles.two}
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="500">
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
                     title="We have some great features from the application"

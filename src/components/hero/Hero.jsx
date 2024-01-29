@@ -14,7 +14,13 @@ export function Hero() {
     }, []);
 
     return (
-        <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
+        <div
+            className={styles.content}
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="500">
             <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur</p>
             <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
             <p className={styles.description}>

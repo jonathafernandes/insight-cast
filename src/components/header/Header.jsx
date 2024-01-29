@@ -42,7 +42,13 @@ export function Header() {
 
     return (
         <header>
-            <div className={styles.content} data-aos="fade-up" data-aos-duration="3000">
+            <div
+                className={styles.content}
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="500">
                 <div className={styles.logo}>
                     <img src={logo} alt="" />
                     <span>Insightcast</span>
