@@ -36,3 +36,15 @@
 @mixin border-radius
     border-radius: 10px
     border: 1px solid variables.$border-color
+
+@mixin laptop
+    @media(max-width: 995px)
+        @content
+
+@mixin tablet
+    @media(max-width: 786px)
+        @content
+
+@mixin mobile
+    @media(max-width: 425px)
+        @content

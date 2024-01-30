@@ -11,10 +11,9 @@
     padding: 1.3rem
     z-index: 1000
     backdrop-filter: blur(24px)
-
+    
     .logo
-        display: flex
-        align-items: center
+        @include mixins.flex-container
         gap: 0.5rem
 
         img
@@ -26,6 +25,9 @@
             font-weight: 800
     
     nav
+        @include mixins.laptop
+            display: none
+
         ul
             display: flex
             align-items: center
@@ -46,3 +48,6 @@
         @include mixins.primary-hover
 
         padding: 0.5rem 1rem
+
+        @include mixins.mobile
+            display: none
