@@ -10,7 +10,7 @@
     
     a 
         text-decoration: none
-        color: variables.$text-color
+        color: variables.$primary-text-color
         cursor: pointer
 
     button
@@ -28,6 +28,10 @@
 @mixin secondary-hover
     &:hover
         background: variables.$primary-color
+
+@mixin tertiary-hover
+    &:hover
+        color: variables.$primary-text-color
     
 @mixin border-radius
     border-radius: 10px
