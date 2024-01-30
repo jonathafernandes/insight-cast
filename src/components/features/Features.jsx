@@ -28,7 +28,7 @@ export function Features() {
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
                 data-aos-offset="0"
-                data-aos-duration="500">
+                data-aos-duration="200">
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
                     title="We have some great features from the application"
@@ -55,7 +55,7 @@ export function Features() {
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
                 data-aos-offset="0"
-                data-aos-duration="500">
+                data-aos-duration="200">
                 <ContentText
                     subtitle="Lorem ipsum dolor sit amet"
                     title="We have some great features from the application"

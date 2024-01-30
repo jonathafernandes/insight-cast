@@ -48,7 +48,7 @@ export function Header() {
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
                 data-aos-offset="0"
-                data-aos-duration="500">
+                data-aos-duration="200">
                 <div className={styles.logo}>
                     <img src={logo} alt="" />
                     <span>Insightcast</span>

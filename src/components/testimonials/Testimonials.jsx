@@ -20,7 +20,7 @@ export function Testimonials() {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            data-aos-duration="500">
+            data-aos-duration="200">
             <span className={styles.subtitle}>Testimonials</span>
             <h2 className={styles.title}>People like you love</h2>
             <div className={styles.cards}>

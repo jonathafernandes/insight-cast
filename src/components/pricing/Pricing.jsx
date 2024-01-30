@@ -20,7 +20,7 @@ export function Pricing() {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            data-aos-duration="500">
+            data-aos-duration="200">
             <span className={styles.subtitle}>Find your perfect fit</span>
             <h2 className={styles.title}>Choose your best plan</h2>
             <p className={styles.description}>Select the plan that suits your needs and benefit from our analytics tools.</p>

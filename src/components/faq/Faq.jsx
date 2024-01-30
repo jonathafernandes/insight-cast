@@ -18,7 +18,7 @@ export function Faq() {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            data-aos-duration="500">
+            data-aos-duration="200">
             <span className={styles.subtitle}>Have any questions?</span>
             <h2 className={styles.title}>Frequently Asked Questions</h2>
             <div className={styles.cards}>
