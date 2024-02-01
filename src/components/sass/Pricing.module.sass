@@ -14,11 +14,15 @@
 
     .title
         font-size: 3rem
+        @include mixins.tablet
+            font-size: 2.25rem
 
         margin-top: 0.5rem
     .description
         color: variables.$secondary-text-color
         line-height: 1.8rem
+        @include mixins.tablet
+            margin: 0 1rem
 
 .cards
     @include mixins.flex-container
