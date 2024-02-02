@@ -4,6 +4,7 @@ export function PrimaryButton(props) {
     return (
         <button
             className={props.className}
+            onClick={props.onClick}
         >
             {props.text}
         </button>
@@ -11,6 +12,7 @@ export function PrimaryButton(props) {
 }
 
 PrimaryButton.propTypes = {
+    className: PropTypes.string,
     text: PropTypes.string.isRequired,
-    className: PropTypes.string
+    onClick: PropTypes.string
 }
