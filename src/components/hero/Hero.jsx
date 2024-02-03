@@ -9,6 +9,7 @@ import image from "../../assets/images/dashboard.c764a4bf.jpg";
 import { PrimaryButton } from "../primary-button/PrimaryButton";
 import { Modal } from '../modal/Modal';
 import { X } from '@phosphor-icons/react';
+import { ContentText } from '../features/ContentText';
 
 export function Hero() {
     useEffect(() => {
@@ -43,16 +44,30 @@ export function Hero() {
                 <PrimaryButton className={stylesButton.buttonTwo} onClick={handleOpenModal} text='Demonstração ao vivo' />
             </div>
             <Modal isOpen={modalOpen} onClose={handleCloseModal}>
-                {/* TODO: Renderizar corretamente o botão */}
-                <button onClick={handleCloseModal}>
-                    <X size={26} />
-                </button>
-                <h2>
-                    Subscribe Now
-                    <br />
-                    Winter is coming
-                </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ad voluptate corporis impedit inventore nesciunt officia sapiente facere magni maxime, deserunt fuga vitae quod cupiditate ipsa tempore, et sed distinctio.</p>
+                <div className={styles.modal}>
+                    <div className={styles.text}>
+                        <button className={styles.modalCloseBtn} onClick={handleCloseModal}>
+                            <X size={26} />
+                        </button>
+                        <h2>
+                            Subscribe Now
+                            <br />
+                            <span>
+                                Winter is coming
+                            </span>
+                        </h2>
+                        <ContentText
+                            listItemOne="Lorem ipsum dolor sit amet"
+                            listItemTwo="Lorem ipsum dolor sit amet"
+                            listItemThree="Lorem ipsum dolor sit amet"
+                        />
+                    </div>
+                    <div className={styles.form}>
+                        <label htmlFor="email">Join 3,953 other developers</label>
+                        <input id='email' name='email' type="email" placeholder='Your e-mail address'></input>
+                        <PrimaryButton className={stylesButton.buttonOne} onClick={handleCloseModal} text='Join Now'/>
+                    </div>
+                </div>
             </Modal>
 
             <img src={image} alt="" />
