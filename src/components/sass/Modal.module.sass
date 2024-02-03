@@ -16,6 +16,10 @@
     .modal
         padding: 3rem 4rem
         max-width: 80%
+        @include mixins.laptop
+            padding: 2rem
+        @include mixins.laptop
+            padding: 1.5rem
 
         background-color: variables.$primary-bg-color
         backdrop-filter: blur(24px)

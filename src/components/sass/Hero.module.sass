@@ -43,6 +43,8 @@
     .modal
         @include mixins.flex-container
         gap: 5rem
+        @include mixins.tablet
+            gap: 0
 
         .modalCloseBtn
             background: none
@@ -55,8 +57,10 @@
             right: 10px
 
         h2
-            font-size: 3rem
+            font-size: 2rem
             font-weight: 900
+            @include mixins.tablet
+                display: none
             
             span
                 color: variables.$primary-color
@@ -64,6 +68,8 @@
         ul
             margin-top: 2rem
             line-height: 1.8rem
+            @include mixins.tablet
+                display: none
 
             li
                 margin-bottom: 0.5rem
@@ -79,10 +85,10 @@
         .form
             @include mixins.flex-container
             flex-direction: column
-            gap: 2rem
+            gap: 1rem
 
             label
-                font-size: 1.5rem
+                font-size: 0.96rem
                 color: variables.$primary-text-color
                 font-weight: 900
 
