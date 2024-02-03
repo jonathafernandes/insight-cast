@@ -9,17 +9,14 @@
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.5)
-    display: flex
-    justify-content: center
-    align-items: center
+    @include mixins.flex-container
 
     .modal
-        padding: 3rem 4rem
-        max-width: 80%
-        @include mixins.laptop
-            padding: 2rem
-        @include mixins.laptop
-            padding: 1.5rem
+        padding: 2rem 0
+        width: 85%
+        max-width: 800px
+        @include mixins.tablet
+            width: 95%
 
         background-color: variables.$primary-bg-color
         backdrop-filter: blur(24px)

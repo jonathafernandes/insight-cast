@@ -42,9 +42,10 @@
         
     .modal
         @include mixins.flex-container
+        justify-content: space-evenly
         gap: 5rem
         @include mixins.tablet
-            gap: 0
+            display: initial
 
         .modalCloseBtn
             background: none
@@ -88,7 +89,7 @@
             gap: 1rem
 
             label
-                font-size: 0.96rem
+                font-size: 1.1rem
                 color: variables.$primary-text-color
                 font-weight: 900
 
