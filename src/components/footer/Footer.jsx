@@ -18,17 +18,17 @@ export function Footer() {
                     <ul className={styles.social}>
                         <li>
                             <a href="#">
-                                <FacebookLogo size={40} weight="fill" className={styles.facebookIcon}/>
+                                <FacebookLogo size={30} weight="fill" className={styles.facebookIcon}/>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <TwitterLogo size={40} weight="fill" className={styles.twitterIcon}/>
+                                <TwitterLogo size={30} weight="fill" className={styles.twitterIcon}/>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <InstagramLogo size={40} weight="fill" className={styles.instagramIcon}/>
+                                <InstagramLogo size={30} weight="fill" className={styles.instagramIcon}/>
                             </a>
                         </li>
                     </ul>
