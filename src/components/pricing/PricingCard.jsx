@@ -5,11 +5,14 @@ import PropTypes from 'prop-types';
 import { PrimaryButton } from '../primary-button/PrimaryButton';
 import { Check } from '@phosphor-icons/react';
 
-export function PricingCard({ plan, price, description}) {
+export function PricingCard({ plan, price, time, description}) {
     return (
         <div className={styles.card}>
             <h3 className={styles.plan}>{plan}</h3>
-            <span className={styles.price}>{price}</span>
+            <div className={styles.contentPrice}>
+                <span className={styles.price}>{price}</span>
+                <span className={styles.time}>{time}</span>
+            </div>
             <p className={styles.description}>{description}</p>
             <ul>
                 <li>
@@ -52,5 +55,6 @@ export function PricingCard({ plan, price, description}) {
 PricingCard.propTypes = {
     plan: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
 }
