@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import styles from "../sass/Hero.module.sass";
 import stylesButton from '../sass/PrimaryButton.module.sass';
 import image from "../../assets/images/dashboard.c764a4bf.jpg";
+import logo from '/logo.svg';
 
 import { PrimaryButton } from "../primary-button/PrimaryButton";
 import { Modal } from '../modal/Modal';
@@ -49,6 +50,10 @@ export function Hero() {
                         <button className={styles.modalCloseBtn} onClick={handleCloseModal}>
                             <X size={26} />
                         </button>
+                        <div className={styles.logo}>
+                            <img className={styles.logoImg} src={logo} alt="" />
+                            <span>Insightcast</span>
+                        </div>
                         <h2>
                             Subscribe Now
                             <br />
@@ -70,7 +75,7 @@ export function Hero() {
                 </div>
             </Modal>
 
-            <img src={image} alt="" />
+            <img className={styles.heroImg} src={image} alt="" />
         </div>
     )
 }
