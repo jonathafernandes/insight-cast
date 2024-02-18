@@ -32,12 +32,12 @@ export function Pricing() {
             <div className={styles.buttons}>
                 <PrimaryButton
                     className={`${stylesButton.buttonOne} ${activeButton === 'monthly' ? stylesButton.active : ''}`}
-                    onClick={() => { setActivePrice('monthly'); setActiveButton('monthly'); }}
+                    onClick={() => { setActivePrice('yearly'); setActiveButton('yearly'); }}
                     text='Monthly'
                 />
                 <PrimaryButton
                     className={`${stylesButton.buttonOne} ${activeButton === 'yearly' ? stylesButton.active : ''}`}
-                    onClick={() => { setActivePrice('yearly'); setActiveButton('yearly'); }}
+                    onClick={() => { setActivePrice('monthly'); setActiveButton('monthly'); }}
                     text='Yearly'
                 />
             </div>
