@@ -2,8 +2,7 @@
 @use 'variables'
     
 .content
-    margin-top: 8rem
-    margin-bottom: 8rem //TO-REMEMBER: remover
+    margin: 8rem 0
     text-align: center
     
     .subtitle
@@ -37,6 +36,9 @@
 
             padding: 2rem
             width: 900px
+
+            @include mixins.laptop
+                width: 90%
 
             @include mixins.tablet
                 width: 90%

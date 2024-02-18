@@ -3,6 +3,8 @@
 
 .card
     background: variables.$primary-bg-color
+    @include mixins.mobile
+        width: 90%
 
     @include mixins.border-radius
     flex-wrap: wrap
