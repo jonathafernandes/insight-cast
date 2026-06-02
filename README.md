@@ -1,4 +1,4 @@
-## React + Vite + SASS
+## Prática de React + Vite + SASS
 
 ### Landing page
 
